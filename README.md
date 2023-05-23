@@ -6,8 +6,6 @@
 - (a) - Criar uma aplicação Java Web utilizando JavaServer Faces (JSF). 
 - (b) - Utilizar persistência em um banco de dados PostgreSQL.
 - (c) - Utilizar JPA.
-- (d) -
-- (e) - 
 - (f) - Foi utilizado o PrimeFaces para criar intefaces de usuário;
 
 
