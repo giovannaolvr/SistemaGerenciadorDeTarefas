@@ -2,8 +2,8 @@
 
 <h2> Em geral </h2>
 
-- Aplicação Java Web para o gerenciamento de tarefas;
-- Aplicado em Java, utilizando a arquitetura MVC(model, view, controller), o framework JSF(JavaServer Facelets) e o PrimeFaces;
+- Aplicação Java Web para gestão de tarefas.
+- Aplicado em Java, utilizando a arquitetura MVC(model, view, controller), o framework JSF(JavaServer Facelets) e o PrimeFaces(IU).
 
 <h2> Tópicos realizados - atividade técnica de recrutamento: </h2>
 
@@ -15,7 +15,7 @@
 <h2> Alguns detalhes sobre a aplicação </h2>
 
 - A aplicação de gestão de tarefas é capaz de criar, editar, ler e excluir uma Tarefa.
-- A entidade Tarefa é composta por: id(PrimaryKey), titulo, descricao, responsavel, prioridade('alta', 'media' ou 'baixa'), deadline, situacao('Em Andamento' ou 'Concluído');
+- A entidade Tarefa é composta por: id(PrimaryKey), titulo, descricao, responsavel, prioridade('alta', 'media' ou 'baixa'), deadline, situacao('Em Andamento' ou 'Concluído').
   - Para melhor gerenciamento da entidade e dos dados, as variáveis 'prioridade' e 'situcacao' são Enums. Com isso, é possível definir um conjunto limitado de valores que as variáveis podem assumir, evitando erros e excessões ao lidar com o usuário. 
 -  Todas as variáveis foram devidamente tratadas para a validação e conversão dos dados.
 -  Para lidar com o ciclo de vida da aplicação foi utilizada a notação '@ViewScoped' na classe 'controller/gestaoTarefasBean.java', com isso o bean será criado e mantido enquanto o usuário permanecer na mesma página (view) durante a interação com a aplicação.
