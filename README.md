@@ -21,12 +21,14 @@
 -  Para lidar com o ciclo de vida da aplicação foi utilizada a notação '@ViewScoped' na classe 'controller/gestaoTarefasBean.java', com isso o bean será criado e mantido enquanto o usuário permanecer na mesma página (view) durante a interação com a aplicação.
 
 <h2> Instruções para a execução da aplicação: </h2>
-Requisitos:
 
-Eclipse IDE instalado
-Apache Tomcat 9 instalado
-JDK (Java Development Kit) instalado
-Passo 1: Importar o projeto no Eclipse
+<h3> Requisitos: </h3>
+
+1. Eclipse IDE instalado
+2. Apache Tomcat 9 instalado
+3. JDK (Java Development Kit) instalado
+
+<h3> Passo 1: Importar o projeto no Eclipse </h3>
 
 Abra o Eclipse IDE.
 Selecione o menu "File" e escolha a opção "Import".
