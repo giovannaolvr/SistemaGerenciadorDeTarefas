@@ -14,7 +14,7 @@
 
 <h2> Alguns detalhes sobre a aplicação </h2>
 
-- A aplicação de gestão de tarefas é capaz de criar, editar, ler e excluir uma Tarefa.
+- A aplicação de gestão de tarefas é capaz de criar, editar, ler e excluir uma Tarefa. 
 - A entidade Tarefa é composta por: id(PrimaryKey), titulo, descricao, responsavel, prioridade('alta', 'media' ou 'baixa'), deadline, situacao('Em Andamento' ou 'Concluído').
   - Para melhor gerenciamento da entidade e dos dados, as variáveis 'prioridade' e 'situcacao' são Enums. Com isso, é possível definir um conjunto limitado de valores que as variáveis podem assumir, evitando erros e excessões ao lidar com o usuário. 
 -  Todas as variáveis foram devidamente tratadas para a validação e conversão dos dados.
