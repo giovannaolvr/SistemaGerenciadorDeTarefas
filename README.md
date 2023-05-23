@@ -65,7 +65,8 @@ Selecione "New" -> "Server".
 - O Eclipse irá iniciar o servidor Tomcat e implantar o projeto nele.
 - Abra um navegador web e acesse a URL "http://localhost:8080/nome-do-projeto" (substitua "nome-do-projeto" pelo nome do seu projeto). A aplicação Java Web deverá ser carregada e estará pronta para uso.
 
-
+<h2> Final </h2>
+![image](https://github.com/giovannaolvr/SistemaGerenciadorDeTarefas/assets/128005290/16e13219-80b6-4f3b-a6e8-66777ddfb89a)
 
 
 
