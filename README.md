@@ -1,24 +1,23 @@
 # Sistema Gerenciador De Tarefas
 
+- Atividade Técnica de Recrutamento.
+
 <h2> Em geral </h2>
 
-- Aplicação Java Web para gestão de tarefas.
-- Aplicado em Java, utilizando a arquitetura MVC(model, view, controller), o framework JSF(JavaServer Facelets) e o PrimeFaces(IU).
+- Projeto com o objetivo de realizar uma aplicação Java Web utilizando JavaServer Faces(JSF) e persistência em um banco de dados PostgreSQL.
+- O 'Gerenciador de Tarefas' tem as funcionalidades de criar, ler, atualizar e excluir uma Tarefa, assim como também, concluí-la.
+- A entidade 'Tarefa' é composta por: id (Primary Key), titulo, descricao, responsavel, prioridade ('alta', 'media' ou 'baixa'), deadline, situacao ('Em Andamento' ou 'Concluído').
+  - Todas as variáveis foram devidamente tratadas para a validação e conversão dos dados.
+  - Para melhor gerenciamento da entidade e dos dados, as variáveis 'prioridade' e 'situcacao' são Enums. Com isso, é possível definir um conjunto limitado de valores que as variáveis podem assumir, evitando erros e excessões ao lidar com o usuário.
+- O usuário poderá buscar suas tarefas a partir do 'titulo' e, também, listá-las por 'situacao'.
+- A interface (implantada com o framework PrimeFaces) atua para ajudar o usuário, logo, em uma única página o usuário consegue realizar todas as funcionalidades e também visualizá-las ocorrendo com facilidade através da listagem de tarefas.
 
-<h2> Tópicos realizados - atividade técnica de recrutamento: </h2>
+<h2> Recrutamento - tópicos realizados: </h2>
 
 - (a) - Criar uma aplicação Java Web utilizando JavaServer Faces (JSF). 
 - (b) - Utilizar persistência em um banco de dados PostgreSQL.
 - (c) - Utilizar JPA.
 - (f) - Foi utilizado o PrimeFaces para criar intefaces de usuário;
-
-<h2> Alguns detalhes sobre a aplicação </h2>
-
-- A aplicação de gestão de tarefas é capaz de criar, editar, ler e excluir uma Tarefa. 
-- A entidade Tarefa é composta por: id(PrimaryKey), titulo, descricao, responsavel, prioridade('alta', 'media' ou 'baixa'), deadline, situacao('Em Andamento' ou 'Concluído').
-  - Para melhor gerenciamento da entidade e dos dados, as variáveis 'prioridade' e 'situcacao' são Enums. Com isso, é possível definir um conjunto limitado de valores que as variáveis podem assumir, evitando erros e excessões ao lidar com o usuário. 
--  Todas as variáveis foram devidamente tratadas para a validação e conversão dos dados.
--  Para lidar com o ciclo de vida da aplicação foi utilizada a notação '@ViewScoped' na classe 'controller/gestaoTarefasBean.java', com isso o bean será criado e mantido enquanto o usuário permanecer na mesma página (view) durante a interação com a aplicação.
 
 <h2> Instruções para a execução da aplicação: </h2>
 
