@@ -22,10 +22,13 @@ public class GestaoTarefasBean implements Serializable{
 	
 	@Inject
 	private Tarefas tarefas;
+	
 	@Inject
     private FacesMessages facesMessages;
+	
 	@Inject
 	private CadastroTarefaService cadastroTarefaService;
+	
 	private Tarefa tarefa;
 	private List<Tarefa> listaTarefas;
 	private String termoPesquisa;
@@ -56,7 +59,6 @@ public class GestaoTarefasBean implements Serializable{
 	
 	public void pesquisar() {
 		listaTarefas = tarefas.pesquisarTarefasPorTitulo(termoPesquisa);
-        
         if (listaTarefas.isEmpty()) {
         	facesMessages.info("A consulta não retornou registros");
         }
@@ -74,8 +76,20 @@ public class GestaoTarefasBean implements Serializable{
         return termoPesquisa != null && !"".equals(termoPesquisa);
     }
 	
+	public boolean isSelected() {
+		return ((tarefa!=null)&&(tarefa.getId()!=0));
+	}
+	
+	public Tarefa getTarefa() {
+		return tarefa;
+	}
+	
 	public void listarAllTarefas() {
 		listaTarefas = tarefas.listarTarefas();
+	}
+	
+	public void setTarefa(Tarefa tarefa) {
+		this.tarefa = tarefa;
 	}
 	
 	public List<Tarefa> getListaTarefas(){
@@ -96,18 +110,6 @@ public class GestaoTarefasBean implements Serializable{
 	
 	public SituacaoTarefa[] getSituacaoTarefa() {
 		return SituacaoTarefa.values();
-	}
-	
-	public Tarefa getTarefa() {
-		return tarefa;
-	}
-	
-	public void setTarefa(Tarefa tarefa) {
-		this.tarefa = tarefa;
-	}
-	
-	public boolean isSelected() {
-		return ((tarefa!=null)&&(tarefa.getId()!=0));
 	}
 	
 }
